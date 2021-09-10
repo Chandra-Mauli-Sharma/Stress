@@ -13,7 +13,7 @@ public class Trigger : MonoBehaviour
     void Start()
     {
         count=0;
-        High.text=PlayerPrefs.GetInt("HighScore").ToString();
+        High.text=PlayerPrefs.GetInt("HighScore",0).ToString();
     }
 
     // Update is called once per frame
